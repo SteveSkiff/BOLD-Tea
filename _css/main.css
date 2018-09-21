@@ -36,31 +36,36 @@ body {
       font-size: 1em; } }
 
 .btn:hover {
-  background: #00905E;
+  background: #C76024;
   color: #DCE2F3;
   text-decoration: none;
   cursor: pointer; }
 
 .pagetitle {
-  font-size: 8em;
+  font-size: 6em;
+  background: #00905E;
+  padding: 10px;
+  border-radius: 5px;
   font-weight: 900;
-  margin: 60px 10%;
+  text-align: center;
   color: #333333; }
   @media (min-width: 992px) {
     .pagetitle {
       font-size: 2.5em;
       font-weight: 900;
-      margin: 60px 15%; } }
+      margin: 60px 20%; } }
 
 .subtitle {
-  font-size: 5em;
+  font-size: 4.5em;
   font-weight: 900; }
   @media (min-width: 992px) {
     .subtitle {
       font-size: 1.5em; } }
 
 .color {
-  color: #00905E; }
+  color: #DCE2F3; }
+  .color_g {
+    color: #00905E; }
 
 .bold {
   font-weight: 900; }
@@ -81,7 +86,7 @@ a {
   color: #333333; }
 
 a:hover {
-  color: #00905E;
+  color: #C76024;
   text-decoration: underline; }
 
 header {
@@ -407,13 +412,13 @@ header {
       font-size: 2em; }
       @media (min-width: 992px) {
         .subfeature-item-tag {
-          font-size: 1em; } }
+          font-size: 1.5em; } }
     .subfeature-item-img {
       width: 300px;
       height: 100%; }
       @media (min-width: 992px) {
         .subfeature-item-img {
-          width: 90px;
+          width: 150px;
           height: 100%; } }
     .subfeature-item-title {
       font-weight: 900;
@@ -426,10 +431,10 @@ header {
         .subfeature-item-title {
           font-weight: 900;
           width: 80%;
-          font-size: 1.5em;
+          font-size: 2em;
           margin: 0;
           padding: 0;
-          margin-bottom: 15px; } }
+          margin-bottom: 55px; } }
 
 @keyframes wobble {
   0%,
@@ -456,8 +461,7 @@ header {
     text-align: center;
     font-weight: 500;
     margin-bottom: 3%;
-    background: #DCE2F3;
-    width: 80%;
+    width: 90%;
     margin: 80px auto;
     padding: 1%;
     border-radius: 15px;
@@ -467,8 +471,7 @@ header {
         text-align: center;
         font-weight: 500;
         margin-bottom: 3%;
-        font-size: 1em;
-        background: #DCE2F3;
+        font-size: 1.5em;
         width: 50%;
         margin: 20px auto;
         padding: 1%;
@@ -559,7 +562,7 @@ header {
     align-self: center;
     background: #DCE2F3;
     border-radius: 25px;
-    border: 3px solid #00905E; }
+    border: 2px solid #333333; }
     @media (min-width: 992px) {
       .aboutuspreview-img {
         max-width: 300px; } }
@@ -584,7 +587,7 @@ header {
         margin-top: 15px;
         font-size: 1em; } }
     .aboutuspreview-text-title {
-      font-size: 2.5em;
+      font-size: 2em;
       font-weight: 900;
       margin-top: 0;
       margin-bottom: 10px;
@@ -597,6 +600,8 @@ header {
           font-weight: 900;
           margin-top: 0;
           margin-bottom: 10px; } }
+    .aboutuspreview-text-desc {
+      font-size: 1.5em; }
     .aboutuspreview-text-btn {
       display: flex;
       justify-content: center;
@@ -768,8 +773,7 @@ header {
     margin-right: 5%;
     margin-left: 5%;
     flex-grow: 0;
-    margin-bottom: 10%;
-    width: 100%; }
+    margin-bottom: 10%; }
     @media (min-width: 992px) {
       .pr-container .product {
         flex-direction: row-reverse;
@@ -778,7 +782,7 @@ header {
     .pr-container .product-img {
       height: 600px;
       width: 600px;
-      margin: 0 auto;
+      margin: 0 0;
       margin-bottom: 70px;
       margin-top: 150px; }
       @media (min-width: 992px) {
@@ -811,7 +815,7 @@ header {
           .pr-container .product-text-title {
             font-size: 2em; } }
       .pr-container .product-text-desc {
-        font-size: 2.5em; }
+        font-size: 3em; }
         @media (min-width: 992px) {
           .pr-container .product-text-desc {
             font-size: 1em; } }
@@ -830,6 +834,11 @@ header {
         font-size: 3em; }
         @media (min-width: 992px) {
           .pr-container .product-text-qty {
+            font-size: 1em; } }
+      .pr-container .product-text-btn {
+        font-size: 3em; }
+        @media (min-width: 992px) {
+          .pr-container .product-text-btn {
             font-size: 1em; } }
 
 .img-container {
@@ -1072,11 +1081,23 @@ header {
         font-size: 1em; } }
 
 .orderstatus {
-  margin-left: 15%;
-  clear: both; }
+  margin-left: 80px;
+  clear: both;
+  font-size: 3.5em; }
+  @media (min-width: 992px) {
+    .orderstatus {
+      font-size: 1em;
+      margin-left: 20%; } }
   .orderstatus_row {
     display: flex;
-    margin-left: 15%; }
+    justify-content: space-between;
+    font-size: 3em;
+    margin-left: 80px; }
+    @media (min-width: 992px) {
+      .orderstatus_row {
+        font-size: 1em;
+        margin-left: 20%;
+        margin-right: 20%; } }
   .orderstatus-orderlabel {
     font-weight: 900;
     letter-spacing: 1.1px;
@@ -1084,7 +1105,9 @@ header {
     margin-bottom: 5px; }
     @media (min-width: 992px) {
       .orderstatus-orderlabel {
-        margin-right: 170px; } }
+        margin-right: 170px;
+        letter-spacing: 1.1px;
+        margin-bottom: 5px; } }
   .orderstatus-orderitem {
     margin: 0; }
 
@@ -1193,3 +1216,11 @@ input:focus {
     @media (min-width: 992px) {
       .ordershipping-text {
         font-size: 1em; } }
+
+.thankyou-text {
+  font-size: 3em;
+  margin: 100px 5%; }
+  @media (min-width: 992px) {
+    .thankyou-text {
+      font-size: 1em;
+      margin: 10px 20%; } }
