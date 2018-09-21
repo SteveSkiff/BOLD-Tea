@@ -1,0 +1,51 @@
+.navcart {
+	position: absolute;
+	right: 50px;
+	top: 35px;
+	@include breakpoint(md) {
+		position: absolute;
+		right: 50px;
+		top: 20px;
+	}
+	&-bag {
+		position: relative;
+		&-img {
+			width: 120px;
+			@include breakpoint(md) {
+				width: 50px;
+			}
+		}
+		&-itemnum {
+			position: absolute;
+			padding: 2px;
+			top: 20px;
+			left: 48px;
+			color: $lightblue;
+			font-weight: bold;
+			font-size: 3em;
+			text-shadow: 1px 0px 10px black;
+			@include breakpoint(md) {
+				padding: 2px;
+				font-size: 1.2em;
+				top: 9px;
+				left: 19px;
+			}
+		}
+	}
+	&-title {
+		font-weight: 900;
+		margin-top: 10px;
+		margin-left: -10px;
+		font-size: 2em;
+		color: $lightblue;
+		@include breakpoint(md) {
+			margin-top: 0;
+			margin-left: -10px;
+			font-size: 1em;
+		}
+	}
+}
+.navcart:hover {
+	cursor: pointer;
+}
+

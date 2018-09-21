@@ -1,0 +1,54 @@
+.hero-container {
+	// border-radius: 25px;
+	display: flex;
+	flex-direction: row;
+	height: 600px;
+	width: 100%;
+	// margin: 5% 10%;
+	background: linear-gradient(to bottom right, $lightblue,transparent, transparent), url(../_img/index-hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: space-between;
+	border-top: 2px solid $charcoal;
+	border-bottom: 2px solid $charcoal;
+	position: relative;
+	@include breakpoint(md) {
+		border: 2px solid $charcoal;
+		border-radius: 15px;
+		margin: 5% 10%;
+		width: 80%;
+		height: 500px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	&-title {
+		font-size: 8em;
+		margin: 4%;
+		line-height: .8em;
+		@include breakpoint(md) {
+			font-size: 7em;
+			margin: 4%;
+			line-height: .8em;
+		}
+	}
+	.btn {
+		align-self: flex-end;
+		margin: 5%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		width: 300px;
+		flex-shrink: 0;
+		font-size: 2em;
+		text-align: center;
+		@include breakpoint(md) {
+			margin: 5%;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 25px;
+			flex-shrink: 0;
+			width: auto;
+			font-size: 1em;
+
+		}
+	}
+}

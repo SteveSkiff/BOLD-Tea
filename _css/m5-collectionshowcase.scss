@@ -1,0 +1,122 @@
+// Animation (Wobble)
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(0px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(0px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(0px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(0px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(0px) rotate(-1.2deg);
+  }
+}
+
+
+// CSS
+
+.collection {
+	margin: 15% auto;
+	@include breakpoint(md) {
+		margin: 8% auto;
+	}
+	&-intro {
+		text-align: center;
+		font-weight: 500;
+		margin-bottom: 3%;
+		background: $lightblue;
+		width: 80%;
+		margin: 80px auto;
+		padding: 1%;
+		border-radius: 15px;
+		font-size: 3em;
+		@include breakpoint(md) {
+			text-align: center;
+			font-weight: 500;
+			margin-bottom: 3%;
+			font-size: 1em;
+			background: $lightblue;
+			width: 50%;
+			margin: 20px auto;
+			padding: 1%;
+			border-radius: 5px;
+		}
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		@include breakpoint(md) {
+			display: flex;
+			flex-direction: row;
+			list-style-type: none;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			width: 250px;
+			height: 300px;
+			margin-top: 20px;
+			margin-bottom: 50px;
+			@include breakpoint(md) {
+				width: auto;
+				height: 170px;
+				margin-bottom: inherit;
+				justify-content: space-evenly;
+			}
+			a {
+				text-decoration: none;
+				color: $charcoal;
+			}
+			a:hover {
+				color: $teagreen;
+			}
+			img {
+				width: 200px;
+				height: 70%;
+				@include breakpoint(md) {
+					width: 90px;
+					height: 60%;
+				}
+			}
+			p {
+				text-align: center;
+				font-weight: 900;
+				font-size: 3em;
+				@include breakpoint(md) {
+					text-align: center;
+					font-weight: 900;
+					font-size: 1.5em;
+				}
+			}
+		}
+		li:hover {
+			img {
+				animation: wobble .5s;
+			}
+		}
+	}
+}
+
+
+

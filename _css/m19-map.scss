@@ -1,0 +1,21 @@
+.map {
+	width: 100%;
+	margin: 0 auto;
+	height: 900px;
+	border: 2px solid $teagreen;
+	margin-top: 200px;
+	@include breakpoint(md) {
+		width: 80%;
+		margin: 0 auto;
+		height: 400px;
+		margin-top: 50px;
+	}
+}
+.controls {
+	font-size: 2em;
+	// margin: 0 10%;
+	padding: 5px;
+	margin-top: 12px;
+	border: 1px solid $teagreen;
+	margin-bottom: 30px;
+}

@@ -1,0 +1,20 @@
+.orderstatus {
+	margin-left: 15%;
+	clear: both;
+	&_row {
+		display: flex;
+		margin-left: 15%;
+	}
+	&-orderlabel {
+		font-weight: 900;
+		letter-spacing: 1.1px;
+		margin-right:110px;
+		margin-bottom: 5px;
+		@include breakpoint(md) {
+			margin-right: 170px;
+		}
+	}
+	&-orderitem {
+		margin: 0;
+	}
+}

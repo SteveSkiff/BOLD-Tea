@@ -1,0 +1,98 @@
+.form {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	@include breakpoint(md) {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	@include breakpoint(lg) {
+		width: 70%;
+	}
+	&-flexbox {
+		@include breakpoint(md) {
+			margin: 0;
+			margin-left: 30px;
+		}
+	}
+	&-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		@include breakpoint(md) {
+			font-size: 1em;
+		}
+		&-container {
+			width: 100%;
+			font-size: 1em;
+		}
+	}
+	h3, h4, h5 {
+		margin-top: 110px;
+		margin-bottom: 30px;
+		@include breakpoint(md) {
+			margin-top: 70px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.promo-container {
+	display: flex;
+	// flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 170px;
+	margin: 0 auto;
+	&-btn {
+		margin-top: 22px;
+	}
+
+}
+.address {
+	width: 100%;
+}
+.state {
+	width: 70px;
+	@include breakpoint(md) {
+		width: 70px;
+	}
+}
+
+.exp {
+	width: 170px;
+	@include breakpoint(md) {
+		width: 100px;
+	}
+}
+
+// .paymentbtn {
+// 	padding: 10px;
+// 	border: 2px solid black;
+// 	font-weight: 900;
+// 	background: transparent;
+// 	text-decoration: none;
+// 	color: $charcoal;
+// 	vertical-align: center;
+// 	font-size: .1em;
+// 	@include breakpoint(md) {
+// 		padding: 10px;
+// 		border: 2px solid black;
+// 		font-weight: 900;
+// 		background: transparent;
+// 		text-decoration: none;
+// 		color: $charcoal;
+// 		vertical-align: center;
+
+// 	}
+// }
+
+.paymentbtn:hover {
+	background: $teagreen;
+	color: $charcoal;
+	text-decoration: none;
+	cursor: pointer;
+}

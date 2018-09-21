@@ -1,0 +1,64 @@
+.subfeature {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin-top: 8%;
+	margin-bottom: 8%;
+	@include breakpoint(md) {
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 8%;
+		margin-bottom: 8%;
+	}
+	&-item {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		margin: 5% 15%;
+		@include breakpoint(md) {
+			margin: 15% 15%;
+			margin: auto;
+			display: flex;
+			flex-direction: row;
+		}
+		&-tag {
+			position: absolute;
+			left: -5%;
+			top: -10%;
+			color: $teagreen;
+			font-weight: 900;
+			font-size: 2em;
+			@include breakpoint(md) {
+				font-size: 1em;
+			}
+		}
+		&-img {
+			width: 300px;
+			height: 100%;
+			@include breakpoint(md) {
+				width: 90px;
+				height: 100%;
+			}
+		}
+		&-title {
+			font-weight: 900;
+			width: 80%;
+			font-size: 4em;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 80px;
+			@include breakpoint(md) {
+				font-weight: 900;
+				width: 80%;
+				font-size: 1.5em;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 15px;
+			}
+		}
+		&-btn {
+			// margin-top: 3%;
+		}
+	}
+}

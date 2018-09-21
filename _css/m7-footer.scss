@@ -1,0 +1,85 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background: $charcoal;
+	margin-top: 8%;
+	&-legal {
+		display: flex;
+		list-style-type: none;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-right: 40px;
+		flex-shrink: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 30%;
+		font-size: 2.5em;
+		@include breakpoint(md) {
+			flex-direction: column;
+			list-style-type: none;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			margin-right: 40px;
+			flex-shrink: 0;
+			font-size: 1em;
+		}
+		li {
+			margin: 10px 5px;
+			@include breakpoint(md) {
+				margin: 5px;
+			}
+		}
+		a {
+			color: $lightblue;
+			text-decoration: none;
+		}
+		a:hover {
+			color: $teagreen;
+			text-decoration: underline;
+		}
+		p {
+			color: grey;
+		}
+	}
+
+
+	&-social {
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		// margin-bottom: 30px;
+		padding-right: 40px;
+		flex-wrap: wrap;
+		li {
+			margin-left: 40px;
+			align-self: center;
+		}
+		a {
+			color: $lightblue;
+			text-decoration: none;
+			svg {
+				width: 80px;
+				height: 80px;
+				@include breakpoint(md) {
+					width: 35px;
+					height: 35px;
+				}
+				.maincolor {
+					fill: $lightblue;
+				}
+				.subcolor {
+					fill: $charcoal;
+				}
+			}
+			svg:hover {
+				.maincolor {
+					fill: $teagreen;
+				}
+			}
+		}
+		a:hover {
+			color: $teagreen;
+			text-decoration: underline;
+		}
+	}
+}

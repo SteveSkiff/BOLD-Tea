@@ -1,0 +1,60 @@
+.ordermsg {
+	margin: 15% auto;
+	width: 100%;
+	text-align: center;
+	@include breakpoint(md) {
+		margin: 10% auto;
+	}
+	.subtitle {
+		font-size: 9em;
+		@include breakpoint(md) {
+			font-size: 5em;
+		}
+	}
+	p {
+		margin: 0 auto;
+		font-size: 2.5em;
+		width: 100%;
+		// text-align: left;
+		@include breakpoint(md) {
+			margin: 0 auto;
+			text-align: center;
+			font-size: 1em;
+			width: 100%;
+		}
+		.ordernum {
+			font-weight: 900;
+		}
+	}
+}
+
+.orderdetails {
+	.subtitle {
+		margin-left: 15%;
+		// margin-bottom: 0;
+	}
+	.cart {
+		margin-left: 20px;
+		@include breakpoint(md) {
+			margin-left: auto;
+		}
+	}
+
+}
+.ordershipping {
+	margin-top: 15%;
+	margin-bottom: 15%;
+	@include breakpoint(md) {
+		margin-top: 8%;
+		margin-bottom: 0;
+	}
+	&-text {
+		margin-top: 0;
+		margin-left: 15%;
+		font-size: 2.5em;
+		@include breakpoint(md) {
+			// margin-left:20%;
+			font-size: 1em;
+		}
+	}
+}

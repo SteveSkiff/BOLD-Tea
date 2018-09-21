@@ -1,0 +1,88 @@
+
+.aboutuspreview {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20% auto;
+	width: 80%;
+	@include breakpoint(md) {
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 0%;
+		margin-bottom: 0;
+		width: 80%;
+	}
+	&_reversed {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		justify-content: center;
+		margin: 0 auto;
+		@include breakpoint(md) {
+			flex-direction: row-reverse;
+			justify-content: center;
+			margin: 4% auto;
+			width: 80%;
+		}
+	}
+	&-img {
+		height: 400px;
+		min-width: 400px;
+		@include breakpoint(md) {
+			max-width: 300px;
+		}
+		align-self: center;
+		background: $lightblue;
+		border-radius: 25px;
+		border: 3px solid $teagreen;
+		@include breakpoint(md) {
+			height: 150px;
+			min-width: 150px;
+			border-radius: 15px;
+		}
+	}
+	&-text {
+		margin-left: 5%;
+		margin-right: 5%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 15px;
+		font-size: 2.5em;
+		@include breakpoint(md) {
+			margin-left: 5%;
+			margin-right: 5%;
+			display: flex;
+			flex-direction: column;
+			margin-top: 15px;
+			font-size: 1em;
+		}
+		&-title {
+			font-size: 2.5em;
+			font-weight: 900;
+			margin-top: 0;
+			margin-bottom: 10px;
+			text-align: center;
+			color: $charcoal;
+
+			@include breakpoint(md) {
+				text-align: left;
+				font-size: 1.5em;
+				font-weight: 900;
+				margin-top: 0;
+				margin-bottom: 10px;
+			}
+		}
+		&-btn {
+			display: flex;
+			justify-content: center;
+			font-size: 1em;
+			@include breakpoint(md) {
+				font-size: 1em;
+			}
+		}
+		.btn:hover {
+			color: $lightblue;
+			text-decoration: none;
+		}
+	}
+}
