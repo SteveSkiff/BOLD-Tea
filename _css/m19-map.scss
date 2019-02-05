@@ -19,3 +19,41 @@
 	border: 1px solid $teagreen;
 	margin-bottom: 30px;
 }
+
+.logos {
+	margin: 0 10%;
+	display: flex;
+	justify-content: center;
+	&-list {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		@include breakpoint(md) {
+			// justify-content: space-between;
+		}
+		&-listitem {
+			padding: 20px;
+			@include breakpoint(md) {
+				width: 35%;
+			}
+			&-img {
+				&__target {
+					height: 150px;
+				}
+				&__walmart {
+					height: 70px;
+				}
+				&__jewelosco {
+					height: 100px;
+				}
+				&__marianos {
+					height: 80px;
+				}
+			}
+		}
+	}
+}

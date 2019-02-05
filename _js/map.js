@@ -1,5 +1,6 @@
 var map;
 var infowindow;
+console.log("Map JS Loaded");
 
 
 function initMap() {

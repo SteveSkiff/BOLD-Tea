@@ -2,12 +2,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
-	margin-top: 8%;
-	margin-bottom: 8%;
+	// width: 100%;
+	margin: 8% 3%;
 	@include breakpoint(md) {
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		margin-top: 8%;
 		margin-bottom: 8%;
 	}
@@ -17,8 +16,8 @@
 		position: relative;
 		margin: 5% 15%;
 		@include breakpoint(md) {
-			margin: 15% 15%;
-			margin: auto;
+			margin: 2% 0%;
+			// margin: auto;
 			display: flex;
 			flex-direction: row;
 		}
@@ -36,6 +35,8 @@
 		&-img {
 			width: 300px;
 			height: 100%;
+			border-radius: 20px;
+			margin-right: 20px;
 			@include breakpoint(md) {
 				width: 150px;
 				height: 100%;
@@ -50,7 +51,7 @@
 			margin-bottom: 80px;
 			@include breakpoint(md) {
 				font-weight: 900;
-				width: 80%;
+				// width: 70%;
 				font-size: 2em;
 				margin: 0;
 				padding: 0;

@@ -439,6 +439,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/_img\/aboutus-whoweare.jpg": {
+		"ft": 16384,
+		"iS": 96541,
+		"oA": 0,
+		"oAP": "\/_img\/aboutus-whoweare.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_img\/boldtea-black_sm.png": {
 		"ft": 32768,
 		"iS": 328987,
@@ -507,12 +517,12 @@
 		},
 	"\/_img\/index-aboutus.jpg": {
 		"ft": 16384,
-		"iS": 2196330,
+		"iS": 105043,
 		"oA": 0,
 		"oAP": "\/_img\/index-aboutus.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_img\/index-hero.jpg": {
@@ -523,6 +533,49 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/_img\/logo__jewelosco.png": {
+		"ft": 32768,
+		"iS": 164787,
+		"oA": 0,
+		"oAP": "\/_img\/logo__jewelosco.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_img\/logo__marianos.jpg": {
+		"ft": 16384,
+		"iS": 32579,
+		"oA": 0,
+		"oAP": "\/_img\/logo__marianos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_img\/logo__target.png": {
+		"ft": 32768,
+		"iS": 138950,
+		"oA": 0,
+		"oAP": "\/_img\/logo__target.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_img\/logo__walmart.png": {
+		"ft": 32768,
+		"iS": 70700,
+		"oA": 0,
+		"oAP": "\/_img\/logo__walmart.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_img\/social-fb.svg": {
